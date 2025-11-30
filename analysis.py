@@ -441,17 +441,17 @@ def plot_separate_percent_changes(dict_perc_change):
 if __name__ == "__main__":
     packages = ["scikit-learn", "pandas", "matplotlib", "plotly", "numpy"]
 
-    # analyze_commits()
-    # # print("\n")
+    analyze_commits()
+    # print("\n")
     
-    # visualize_hourly_commits()
-    # print("hourly visualization in hourly_commits.png")
-    # visualize_daily_commits()
-    # print("daily visualization in daily_commits.png")
-    # visualize_weekly_commits()
-    # print("weekly visualization in weekly_commits.png")
-    # visualize_monthly_commits()
-    # print("monthly visualization in monthly_commits.png\n")
+    visualize_hourly_commits()
+    print("hourly visualization in hourly_commits.png")
+    visualize_daily_commits()
+    print("daily visualization in daily_commits.png")
+    visualize_weekly_commits()
+    print("weekly visualization in weekly_commits.png")
+    visualize_monthly_commits()
+    print("monthly visualization in monthly_commits.png\n")
 
     for package in packages:
         get_last1000_commit_users(package)
