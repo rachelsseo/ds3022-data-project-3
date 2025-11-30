@@ -59,8 +59,6 @@ if __name__ == "__main__":
                 commits=page.json()
                 for c in commits:
                     process_commits(package[1],c['commit'])
-        #             print(c['commit']['author']['name'],'\n')
-        #             print(c['commit']['message'])
 
     except KeyboardInterrupt:
         quota_url="https://api.github.com/rate_limit"
